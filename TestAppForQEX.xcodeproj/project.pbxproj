@@ -16,6 +16,16 @@
 		777CCF65270C74A600378448 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF64270C74A600378448 /* Model.swift */; };
 		777CCF69270C928000378448 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF68270C928000378448 /* DetailViewController.swift */; };
 		777CCF6B270CA88600378448 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF6A270CA88600378448 /* NetworkService.swift */; };
+		777CCF77270DBE9400378448 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 777CCF76270DBE9400378448 /* Kingfisher */; };
+		777CCF79270DC42A00378448 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF78270DC42A00378448 /* Cell.swift */; };
+		777CCF7B270EEBF000378448 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF7A270EEBF000378448 /* MainPresenter.swift */; };
+		777CCF7D270EECE300378448 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF7C270EECE300378448 /* Coordinator.swift */; };
+		777CCF85270EEFC100378448 /* MainViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF84270EEFC100378448 /* MainViewProtocol.swift */; };
+		777CCF87270EEFE200378448 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF86270EEFE200378448 /* NetworkServiceProtocol.swift */; };
+		777CCF8B270EF04B00378448 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF8A270EF04B00378448 /* MainPresenterProtocol.swift */; };
+		777CCF8D270EF71000378448 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF8C270EF71000378448 /* CoordinatorProtocol.swift */; };
+		777CCF8F271443DE00378448 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF8E271443DE00378448 /* Item.swift */; };
+		777CCF922714B33400378448 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777CCF912714B33400378448 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,15 @@
 		777CCF64270C74A600378448 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		777CCF68270C928000378448 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		777CCF6A270CA88600378448 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		777CCF78270DC42A00378448 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		777CCF7A270EEBF000378448 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		777CCF7C270EECE300378448 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		777CCF84270EEFC100378448 /* MainViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocol.swift; sourceTree = "<group>"; };
+		777CCF86270EEFE200378448 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		777CCF8A270EF04B00378448 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
+		777CCF8C270EF71000378448 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		777CCF8E271443DE00378448 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		777CCF912714B33400378448 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777CCF77270DBE9400378448 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,10 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				777CCF6C270DB7B800378448 /* Delegates */,
+				777CCF83270EEFA200378448 /* Protocols */,
+				777CCF7E270EED3100378448 /* Coordinator */,
 				777CCF74270DBA9800378448 /* Services */,
-				777CCF52270C6D1700378448 /* ViewController.swift */,
-				777CCF68270C928000378448 /* DetailViewController.swift */,
-				777CCF64270C74A600378448 /* Model.swift */,
+				777CCF902714B31B00378448 /* Extensions */,
+				777CCF80270EED8200378448 /* Presenters */,
+				777CCF7F270EED6F00378448 /* Controllers */,
+				777CCF81270EED8D00378448 /* Models */,
 				777CCF6D270DB81D00378448 /* Resources */,
 				777CCF6E270DB85C00378448 /* Configuration */,
 			);
@@ -104,8 +127,70 @@
 			isa = PBXGroup;
 			children = (
 				777CCF6A270CA88600378448 /* NetworkService.swift */,
+				777CCF64270C74A600378448 /* Model.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		777CCF7E270EED3100378448 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				777CCF7C270EECE300378448 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		777CCF7F270EED6F00378448 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777CCF52270C6D1700378448 /* ViewController.swift */,
+				777CCF68270C928000378448 /* DetailViewController.swift */,
+				777CCF82270EEDB000378448 /* Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777CCF80270EED8200378448 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				777CCF7A270EEBF000378448 /* MainPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		777CCF81270EED8D00378448 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				777CCF8E271443DE00378448 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777CCF82270EEDB000378448 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				777CCF78270DC42A00378448 /* Cell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		777CCF83270EEFA200378448 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				777CCF8C270EF71000378448 /* CoordinatorProtocol.swift */,
+				777CCF86270EEFE200378448 /* NetworkServiceProtocol.swift */,
+				777CCF84270EEFC100378448 /* MainViewProtocol.swift */,
+				777CCF8A270EF04B00378448 /* MainPresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		777CCF902714B31B00378448 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				777CCF912714B33400378448 /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +209,9 @@
 			dependencies = (
 			);
 			name = TestAppForQEX;
+			packageProductDependencies = (
+				777CCF76270DBE9400378448 /* Kingfisher */,
+			);
 			productName = TestAppForQEX;
 			productReference = 777CCF4B270C6D1700378448 /* TestAppForQEX.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 777CCF42270C6D1700378448;
+			packageReferences = (
+				777CCF75270DBE9400378448 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 777CCF4C270C6D1700378448 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -179,12 +270,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777CCF8B270EF04B00378448 /* MainPresenterProtocol.swift in Sources */,
 				777CCF53270C6D1700378448 /* ViewController.swift in Sources */,
 				777CCF4F270C6D1700378448 /* AppDelegate.swift in Sources */,
+				777CCF79270DC42A00378448 /* Cell.swift in Sources */,
+				777CCF8F271443DE00378448 /* Item.swift in Sources */,
+				777CCF7B270EEBF000378448 /* MainPresenter.swift in Sources */,
+				777CCF7D270EECE300378448 /* Coordinator.swift in Sources */,
 				777CCF69270C928000378448 /* DetailViewController.swift in Sources */,
+				777CCF8D270EF71000378448 /* CoordinatorProtocol.swift in Sources */,
 				777CCF51270C6D1700378448 /* SceneDelegate.swift in Sources */,
 				777CCF6B270CA88600378448 /* NetworkService.swift in Sources */,
 				777CCF65270C74A600378448 /* Model.swift in Sources */,
+				777CCF87270EEFE200378448 /* NetworkServiceProtocol.swift in Sources */,
+				777CCF922714B33400378448 /* String+Extension.swift in Sources */,
+				777CCF85270EEFC100378448 /* MainViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +496,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		777CCF75270DBE9400378448 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		777CCF76270DBE9400378448 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 777CCF75270DBE9400378448 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 777CCF43270C6D1700378448 /* Project object */;
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailViewController: UIViewController {
     
@@ -47,6 +48,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
+        navigationItem.title = "Detail"
         
         view.addSubview(imageView)
         view.addSubview(nameLabel)
@@ -56,11 +58,13 @@ class DetailViewController: UIViewController {
         setupConstraints()
     }
     
-    func configure(with card: Model) {
-        imageView.image = UIImage()
-        nameLabel.text = card.name
-        descriptionLabel.text = card.description
-        dateAtLabel.text = card.createdAt
+    func configure(with item: Item) {
+        if let stringUrl = item.imageUrl {
+            imageView.kf.setImage(with: URL(string: stringUrl), placeholder: UIImage.remove)
+        }
+        nameLabel.text = item.name
+        descriptionLabel.text = item.description
+        dateAtLabel.text = item.createdAt
     }
     
 }
@@ -72,7 +76,7 @@ extension DetailViewController {
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(
                 equalTo: view.topAnchor,
-                constant: 60),
+                constant: 120),
             imageView.centerXAnchor.constraint(
                 equalTo: view.centerXAnchor),
             imageView.widthAnchor.constraint(
